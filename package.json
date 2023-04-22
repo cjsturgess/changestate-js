@@ -1,0 +1,28 @@
+{
+    "name": "pushstate-js",
+    "version": "0.1",
+    "description": "A small, vanilla JS library that adds a new PushStateEvent to the window object. This event is triggered when the browser's history state changes. This is useful for when you want to listen for changes to the URL that don't already fire the popstate or hashchange event.",
+    "main": "src/pushstate.js",
+    "directories": {
+        "src": "src",
+        "test": "test",
+        "dist": "dist"
+    },
+    "scripts": {
+        "build": "cp src/*.js dist/ && terser src/*.js -c -o dist/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cjsturgess/pushstate-js.git"
+    },
+    "author": "CJ Sturgess",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/cjsturgess/pushstate-js/issues"
+    },
+    "homepage": "https://github.com/cjsturgess/pushstate-js#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "terser": "^5.0.0"
+    }
+}
