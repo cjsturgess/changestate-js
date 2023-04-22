@@ -48,7 +48,7 @@ $(window).on("changestate", function(event) {
 
 To build the library via Terser, simply run:
 
-```shell
+```properties
 npm run build
 ```
 
