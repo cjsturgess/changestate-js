@@ -9,7 +9,7 @@
         "dist": "dist"
     },
     "scripts": {
-        "build": "cp src/*.js dist/ && terser src/*.js -c -o dist/"
+        "build": "cp src/changestate.js dist/ && terser src/changestate.js -c -m -o dist/changestate.min.js"
     },
     "repository": {
         "type": "git",
@@ -21,8 +21,10 @@
         "url": "https://github.com/cjsturgess/pushstate-js/issues"
     },
     "homepage": "https://github.com/cjsturgess/pushstate-js#readme",
-    "dependencies": {},
     "devDependencies": {
         "terser": "^5.0.0"
+    },
+    "jshint": {
+        "esversion": 6
     }
 }
