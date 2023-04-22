@@ -48,8 +48,8 @@ $(window).on("changestate", function(event) {
 
 To build the library via Terser, simply run:
 
-```properties
-foo@bar:~$ npm run build
+```shell
+npm run build
 ```
 
 This will create a minified file in the dist folder.
